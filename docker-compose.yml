@@ -3,7 +3,12 @@ services:
   wiki:
     container_name: wiki
     image: mkdocs-wiki
+    networks:
+      - web
     build:
       context: .
       dockerfile: Dockerfile
     restart: always
+networks:
+  web:
+    external: true
