@@ -6,7 +6,8 @@
 
 ## Wiki
 - [x] Remove Secret Stuff
-- [ ] Migrate to Public Server with Blog
+- [x] Migrate to Public Server with Blog
+- [x] CI / CD Page
 - [ ] Update Ansible Docs
 - [ ] Update Home Assistant Docs
 - [ ] Add Repo Links

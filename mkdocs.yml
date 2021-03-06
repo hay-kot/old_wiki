@@ -49,13 +49,18 @@ nav:
           - Linode Server: local-network/services/linode.md
   - Ansible:
       - General: ansible/index.md
-      - Tasks:
-          - Task 1: ansible/tasks/task.md
+      - Roles:
+          - Common: ansible/roles/common.md
   - Home Assistant:
       - General: home-assistant/index.md
+      - Hardware: home-assistant/hardware.md
+      - State Management: home-assistant/state-management.md
   - Code Snippets:
       - Terminal:
           - Aliases: code-snippets/terminal/aliases.md
+      - Caddy:
+          - Static Site: code-snippets/caddy/static-site.md
+          - SPA/API: code-snippets/caddy/api-spa.md
       - Python:
           - General: code-snippets/python/general.md
           - Eel: code-snippets/python/eel.md
