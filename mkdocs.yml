@@ -1,0 +1,62 @@
+site_name: Wiki | hay-kot.dev
+# repo_url: https://gitea.homelabhome.com/hay-kot/home-wiki
+repo_name: hay-kot/home-wiki
+theme:
+  name: material
+  favicon: img/favicon.png
+  icon:
+    repo: fontawesome/brands/git-alt
+    logo: fontawesome/regular/folder-open
+  features:
+    - navigation.instant
+    - navigation.expand
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - codehilite
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      # link: https://gitea.homelabhome.com/hay-kot/home-wiki
+
+extra_css:
+  - stylesheets/custom.css
+
+nav:
+  - Home Lab:
+      - Welcome!: "index.md"
+      - CI/CD: ci-cd.md
+      - Todo List: "todos.md"
+      - Changelog: "change-log.md"
+      - Network & Deployments:
+          - Reverse Proxy: local-network/network-deployment/reverse-proxies.md
+      - Services:
+          - Git Stack: local-network/services/git-stack.md
+          - Peer to Peer: local-network/services/peer-to-peer.md
+          - Pi-Hole: local-network/services/pi-hole.md
+          - Matrix Server: local-network/services/matrix.md
+          - Linode Server: local-network/services/linode.md
+  - Ansible:
+      - General: ansible/index.md
+      - Tasks:
+          - Task 1: ansible/tasks/task.md
+  - Home Assistant:
+      - General: home-assistant/index.md
+  - Code Snippets:
+      - Terminal:
+          - Aliases: code-snippets/terminal/aliases.md
+      - Python:
+          - General: code-snippets/python/general.md
+          - Eel: code-snippets/python/eel.md
+  - Blog: "https://hay-kot.dev"

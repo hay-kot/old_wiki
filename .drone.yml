@@ -1,0 +1,19 @@
+kind: pipeline
+type: docker
+name: Deploy Home Wiki
+
+steps:
+  - name: ssh commands
+    image: appleboy/drone-ssh
+    settings:
+      host:
+        from_secret: mkdocs_host_ip
+      username:
+        from_secret: ssh_username
+      password:
+        from_secret: ssh_password
+      port: 22
+      script:
+        - cd /home/hayden/docker/mkdocs/docs
+        - git pull
+        - docker-compose up --build -d
