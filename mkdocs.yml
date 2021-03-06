@@ -1,5 +1,5 @@
 site_name: Wiki | hay-kot.dev
-# repo_url: https://gitea.homelabhome.com/hay-kot/home-wiki
+repo_url: https://github.com/hay-kot/wiki
 repo_name: hay-kot/home-wiki
 theme:
   name: material
@@ -28,7 +28,7 @@ extra_javascript:
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      # link: https://gitea.homelabhome.com/hay-kot/home-wiki
+      link: https://github.com/hay-kot/wiki
 
 extra_css:
   - stylesheets/custom.css
