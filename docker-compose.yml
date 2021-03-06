@@ -1,12 +1,9 @@
 version: "3"
 services:
-  mkdocs-wiki:
-    container_name: mkdocs_wiki
+  wiki:
+    container_name: wiki
     image: mkdocs-wiki
-    networks:
-      - web
     build:
       context: .
       dockerfile: Dockerfile
     restart: always
-
